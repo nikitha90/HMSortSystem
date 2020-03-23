@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-<form method="post">
+<form action="/hm/sortNumbers" method="post">
 
     <br/>
     <br/>
@@ -57,12 +57,29 @@
         <tr></tr>
         <tr></tr>
         <tr>
-            <td align="center"><input type="submit" value="Sort"/></td>
             <td></td>
+            <td align="right"><input type="submit" value="Sort"/></td>
         </tr>
-
     </table>
+</form>
 
+<br/>
+<br/>
+<br/>
+
+<form action="/hm/viewHistory" method="get">
+
+    <table align="center">
+        <tr>
+            <td class="inputLabel"> Click the button to view sort History:</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+            <td align="right"><input type="submit" value="View Sort History"></td>
+        </tr>
+    </table>
 </form>
 </body>
 </html>

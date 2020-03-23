@@ -9,9 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static com.retail.hm.sortnumbers.constants.SortConstants.ACTUAL_LIST;
@@ -22,6 +22,8 @@ import static com.retail.hm.sortnumbers.constants.SortConstants.SUCCESS;
 import static com.retail.hm.sortnumbers.constants.SortConstants.ERROR;
 import static com.retail.hm.sortnumbers.utils.SortValidator.createIntegerList;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 
 @Controller
@@ -43,7 +45,7 @@ public class SortNumbersController {
      * @param modelMap
      * @return
      */
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = "/index", method = GET)
     public String index(ModelMap modelMap) {
         return "index";
     }
@@ -54,7 +56,7 @@ public class SortNumbersController {
      * @param inputNumbers
      * @return
      */
-    @RequestMapping(value = "/index", method = RequestMethod.POST, produces = APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/hm/sortNumbers", method = POST, produces = APPLICATION_JSON_VALUE)
     public String sortInputNumbers(ModelMap model, @RequestParam String inputNumbers) {
         boolean errorFlag = false;
         try {

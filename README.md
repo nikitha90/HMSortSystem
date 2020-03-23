@@ -22,4 +22,11 @@ Provide the sequence of numbers in the input box separated by commas and click o
 * Give wrong separator
 * Provide characters other than numbers
 
+# View History of sort results
+
+* Click view History button in main page
+* You will be redirected to the page which contains the hisoty of sorted sequences
+* Try a new sort and view the result in view History.
+* View History will be automatically updated when new sequences are provided
+
  Individual Juints for the classes are written.

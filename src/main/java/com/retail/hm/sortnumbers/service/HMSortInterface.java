@@ -1,4 +1,6 @@
-package com.retail.hm.sortnumbers.sortinterface;
+package com.retail.hm.sortnumbers.service;
+
+import org.springframework.stereotype.Component;
 
 /**
  * This is a functional Interface to sort.
@@ -6,6 +8,7 @@ package com.retail.hm.sortnumbers.sortinterface;
  * just use lambda expression and call the sort method.
  */
 @FunctionalInterface
+@Component
 public interface HMSortInterface {
-        int sort(int[] inputArray);
+    int sort(int[] inputArray);
 }

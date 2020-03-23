@@ -8,4 +8,6 @@ public interface SortConstants {
      String POSTION_SHIFT = "shiftPositions";
      String ERROR = "errors";
      String SUCCESS = "sortResult";
+     String VIEW_HISTORY = "viewHistory";
+     String SORT_HISTORY_LIST = "sortHistorySortedList";
 }
